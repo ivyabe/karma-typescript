@@ -4,7 +4,7 @@ Node.js
 ## Setup
 ```bash
 git clone https://github.com/ivyabe/karma-typescript.git
-npm install
+npm install *optional since node_module is already included on clone*
 ```
 
 ## Run Test
