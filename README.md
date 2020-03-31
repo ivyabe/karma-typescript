@@ -1,5 +1,5 @@
 ## Prerequisite
-Node.js
+Node is installed
 
 ## Setup
 ```bash
