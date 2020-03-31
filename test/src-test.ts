@@ -2,7 +2,7 @@ describe('Calculate', function() {
   
   it ("Add", function() {
     var result = addNumber(10, 5);
-    expect(result).to.be.equal.to(15);
+    expect(result).toBe(15);
   });
 
   it ("Subtract", function() {
