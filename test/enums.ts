@@ -1,22 +1,17 @@
 describe('Enums Numbers', function() {
-  
   it ("One", function() {
-    console.log("one");
-    expect(Numbers.One).toBe("ONE");
+    expect(enumTest1()).toBe("ONE");
   });
 
-  it ("One", function() {
-    console.log("two");
-    expect(Numbers.Two).toBe("TWO");
+  it ("Two", function() {
+    expect(enumTest2()).toBe("TWO");
   });
 
-  it ("One", function() {
-    console.log("three");
-    expect(Numbers.Three).toBe("THREE");
+  it ("Three", function() {
+    expect(enumTest3()).toBe("THREE");
   });
 
-  it ("One", function() {
-    console.log("four");
-    expect(Numbers.Four).toBe("FOUR");
+  it ("Four", function() {
+    expect(enumTest4()).toBe("FOUR");
   });
 });
