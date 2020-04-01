@@ -13,7 +13,7 @@ npm test
 ```
 
 ## Additional Note :)
-1. If necessary, update karma.conf.js and tsconfig.json for the files you want to test.
+If necessary, update karma.conf.js and tsconfig.json for the files you want to test.
 
 <b>karma.conf.js</b>
 ```bash
