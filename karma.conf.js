@@ -2,15 +2,17 @@ module.exports = function(config) {
     config.set({
         frameworks: ["jasmine", "karma-typescript"],
         files: [
-            { pattern: "src/*.ts" },
-            { pattern: "test/*.ts"}
+            { pattern: "src/src.ts" },
+            { pattern: "src/src2.ts" },
+            { pattern: "test/src.ts"}
         ],
         preprocessors: {
-            "./src/*.ts": ["karma-typescript"]
+            "src/src.ts": ["karma-typescript"],
+            "src/src2.ts": ["karma-typescript"],
         },
         reporters: ["progress", "html", "karma-typescript"],
         htmlReporter: {
-            outputFile: "./test/test-results.html"
+            outputFile: "test/test-results.html"
         },
         mime: {
             "text/x-typescript": ["ts", "tsx"]
