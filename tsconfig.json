@@ -65,8 +65,8 @@
       "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
     },
     "include": [
-      "src/getter-setter.ts",
-      "test/getter-setter.ts"
+      "src/spy.ts",
+      "test/spy.ts"
     ],
     "exclude": ["node_modules", "coverage"]
   }
