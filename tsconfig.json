@@ -65,8 +65,8 @@
       "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
     },
     "include": [
-      "src/before-after-each.ts",
-      "test/before-after-each.ts"
+      "src/getter-setter.ts",
+      "test/getter-setter.ts"
     ],
     "exclude": ["node_modules", "coverage"]
   }
