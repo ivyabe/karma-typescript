@@ -65,8 +65,9 @@
       "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
     },
     "include": [
-      "src/getter-setter.ts",
-      "test/getter-setter.ts"
+      "src/enums.ts",
+      "src/enums2.ts",
+      "test/enums.ts"
     ],
     "exclude": ["node_modules", "coverage"]
   }

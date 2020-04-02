@@ -1,6 +1,6 @@
 describe("Getter/Setter", function() {
 
-  beforeEach(function() {
+  beforeAll(function() {
     setFirstName("John");
     setLastName("Doe");
   });

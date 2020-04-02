@@ -2,15 +2,17 @@ module.exports = function(config) {
     config.set({
         frameworks: ["jasmine", "karma-typescript"],
         files: [
-            { pattern: "src/getter-setter.ts" },
-            { pattern: "test/getter-setter.ts"}
+            { pattern: "src/enums.ts" },
+            { pattern: "src/enums2.ts" },
+            { pattern: "test/enums.ts" }
         ],
         preprocessors: {
-            "src/getter-setter.ts": ["karma-typescript"]
+            "src/enums.ts": ["karma-typescript"],
+            "src/enums2.ts": ["karma-typescript"]
         },
         reporters: ["progress", "html", "karma-typescript"],
         htmlReporter: {
-            outputFile: "test/test-results-getset.html"
+            outputFile: "test/test-results.html"
         },
         mime: {
             "text/x-typescript": ["ts", "tsx"]

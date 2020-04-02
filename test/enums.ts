@@ -1,17 +1,28 @@
+// import { checkEnum } from "../src/enums2";
+import * as check from "../src/enums2";
+
 describe("Enums Numbers", function() {
-  it ("One", function() {
-    expect(enumTest1()).toBe("ONE");
+  it ("return One", function() {
+    var enumVal = check.checkEnum("one");
+    console.log(enumVal);
+    expect(enumVal).toBe("ONE");
   });
 
-  it ("Two", function() {
-    expect(enumTest2()).toBe("TWO");
+  it ("return Two", function() {
+    var enumVal = check.checkEnum("two");
+    console.log(enumVal);
+    expect(enumVal).toBe("TWO");
   });
 
-  it ("Three", function() {
-    expect(enumTest3()).toBe("THREE");
+  it ("return Three", function() {
+    var enumVal = check.checkEnum("three");
+    console.log(enumVal);
+    expect(enumVal).toBe("THREE");
   });
 
-  it ("Four", function() {
-    expect(enumTest4()).toBe("FOUR");
+  it ("return Four", function() {
+    var enumVal = check.checkEnum("four");
+    console.log(enumVal);
+    expect(enumVal).toBe("FOUR");
   });
 });
