@@ -65,9 +65,8 @@
       "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
     },
     "include": [
-      "src/enums.ts",
-      "src/enums2.ts",
-      "test/enums.ts"
+      "src/before-after-each.ts",
+      "test/before-after-each.ts"
     ],
     "exclude": ["node_modules", "coverage"]
   }

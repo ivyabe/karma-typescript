@@ -2,13 +2,11 @@ module.exports = function(config) {
     config.set({
         frameworks: ["jasmine", "karma-typescript"],
         files: [
-            { pattern: "src/enums.ts" },
-            { pattern: "src/enums2.ts" },
-            { pattern: "test/enums.ts" }
+            { pattern: "src/before-after-each.ts" },
+            { pattern: "test/before-after-each.ts" }
         ],
         preprocessors: {
-            "src/enums.ts": ["karma-typescript"],
-            "src/enums2.ts": ["karma-typescript"]
+            "src/before-after-each.ts": ["karma-typescript"]
         },
         reporters: ["progress", "html", "karma-typescript"],
         htmlReporter: {

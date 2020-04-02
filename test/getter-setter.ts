@@ -1,8 +1,21 @@
 describe("Getter/Setter", function() {
 
+  beforeEach(function() {
+    console.log("Starting each spec");
+  });
+
+  afterEach(function() {
+    console.log("End test spec");
+  });
+
   beforeAll(function() {
     setFirstName("John");
     setLastName("Doe");
+    console.log("Start executing test specs");
+  });
+
+  afterAll(function() {
+    console.log("All test specs are executed");
   });
 
   it ("getFirstName()", function() {
