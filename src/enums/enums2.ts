@@ -1,14 +1,11 @@
-// const num = require("./enums");
-import * as num from "./enums";
-
-export function checkEnum(param: string) {
+function checkEnum(param: string) {
   if (param === "one") {
-    return num.Numbers.One;
+    return Numbers.One;
   } else if (param === "two") {
-    return num.Numbers.One;
+    return Numbers.Two;
   } else if (param === "three") {
-    return num.Numbers.One;
+    return Numbers.Three;
   } else if (param === "four") {
-    return num.Numbers.One;
+    return Numbers.Four;
   }
 };
