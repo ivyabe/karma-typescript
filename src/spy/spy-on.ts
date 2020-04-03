@@ -1,4 +1,4 @@
-function Numbers() {
+function AreNumbers() {
     this.number = "One";
 
     this.nextNumber = function() {

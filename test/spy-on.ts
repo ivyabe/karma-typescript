@@ -1,8 +1,8 @@
-describe("Spy on numbers", function(){
+describe("Spy on numbers", function() {
 
   var num;
   beforeAll(function() {
-    num = new Numbers();
+    num = new AreNumbers();
   });
 
   it("Test callThrough()", function() {
