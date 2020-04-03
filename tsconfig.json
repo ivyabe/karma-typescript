@@ -65,8 +65,8 @@
       "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
     },
     "include": [
-      "src/spy-on.ts",
-      "test/spy-on.ts"
+      "src/spy/spy-on.ts",
+      "test/spy/spy-on.ts"
     ],
     "exclude": ["node_modules", "coverage"]
   }
