@@ -1,21 +1,24 @@
-import { StdViewManager } from "../src/proj/StdViewManager";
-// const StdViewManager = require ("../src/proj/StdViewManager");
+// import { StdViewManager } from "../src/proj/StdViewManager";
 
-describe('startDisplay()', function() {
-  
-  var managr;
+describe("StdViewManager class", function() {
+
+  let svManager;
   beforeAll(function() {
-    managr = new StdViewManager();
+    svManager = new StdViewManager();
   });
 
-  it ("will return default value of display when display is null", function() {
-    spyOn(managr, "startDisplay").and.returnValue("Default");
-    expect(managr.startDisplay()).toEqual("Default");
+  it("Test startDisplay()", function() {
+      spyOn(svManager, "startDisplay").and.returnValue("OK");
+      expect(svManager.startDisplay()).toEqual("OK");
   });
 
-  it ("will return the value of display", function() {
-    spyOn(managr, "startDisplay").and.returnValue("Display");
-    expect(managr.startDisplay()).toEqual("Display");
+  it("Test startDisplay()", function() {
+      spyOn(svManager, "startDisplay").and.returnValue("NG");
+      expect(svManager.startDisplay()).toEqual("NG");
   });
-  
+
+  it("Test getPageDataKindId()", function() {
+      expect(svManager.getPageDataKindId()).toEqual("1");
+  });
 });
+

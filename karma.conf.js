@@ -8,7 +8,7 @@ module.exports = function(config) {
         preprocessors: {
             "src/proj/StdViewManager.ts": ["karma-typescript"]
         },
-        reporters: ["progress", "html", "karma-typescript"],
+        reporters: ["progress", "dots", "html", "karma-typescript"],
         htmlReporter: {
             outputFile: "test/test-results.html"
         },
@@ -22,8 +22,6 @@ module.exports = function(config) {
         },
         logLevel: config.LOG_INFO,
         browsers: ["Chrome", "IE"],
-        autoWatch: false,
-        concurrency: Infinity,
         singleRun: true
     });
 };
