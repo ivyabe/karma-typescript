@@ -1,21 +1,20 @@
-export class Manager {
-
+export class StdViewManager {
     private display: any;
-
     public startDisplay() {
         console.log("startDisplay()");
-        if ( this.display == null) {
+        if (this.display == null) {
             return "NG";
-        } else {
+        }
+        else {
             return "OK";
         }
     }
-	
-	public getPageDataKindId() {
+    public getPageDataKindId() {
         console.log("getPageDataKindId()");
         return this.startDisplay();
     }
 }
 
-export const manage = new Manager();
-// window.manage = manage;
+export const managr = new StdViewManager();
+window.managr = managr;
+module.exports = StdViewManager;

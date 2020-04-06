@@ -2,11 +2,11 @@ module.exports = function(config) {
     config.set({
         frameworks: ["jasmine", "karma-typescript"],
         files: [
-            { pattern: "src/proj/proj-test.ts" },
-            { pattern: "test/proj-test.ts" }
+            { pattern: "src/proj/*.ts" },
+            { pattern: "test/StdViewManager.ts" }
         ],
         preprocessors: {
-            "src/proj/proj-test.ts": ["karma-typescript"]
+            "src/proj/*.ts": ["karma-typescript"]
         },
         reporters: ["progress", "html", "karma-typescript"],
         htmlReporter: {

@@ -1,4 +1,5 @@
-import { Manager } from "../src/proj/proj-test";
+import { StdViewManager } from "../src/proj/StdViewManager";
+// const Manager = require ("../src/proj/Manager");
 
 describe('startDisplay()', function() {
   
