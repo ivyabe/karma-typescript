@@ -17,7 +17,7 @@
     "karma-htmlfile-reporter": "^0.3.8",
     "karma-ie-launcher": "^1.0.0",
     "karma-jasmine": "^2.0.1",
-    "karma-typescript": "latest",
+    "karma-typescript": "^5.0.2",
     "ts-loader": "^6.2.2",
     "typescript": "^1.6.2"
   }

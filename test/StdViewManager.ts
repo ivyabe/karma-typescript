@@ -1,21 +1,21 @@
 import { StdViewManager } from "../src/proj/StdViewManager";
-// const Manager = require ("../src/proj/Manager");
+// const StdViewManager = require ("../src/proj/StdViewManager");
 
 describe('startDisplay()', function() {
   
-  var mnger;
+  var managr;
   beforeAll(function() {
-    mnger = new Manager();
+    managr = new StdViewManager();
   });
 
   it ("will return default value of display when display is null", function() {
-    spyOn(mnger, "startDisplay").and.returnValue("Default");
-    expect(mnger.startDisplay()).toEqual("Default");
+    spyOn(managr, "startDisplay").and.returnValue("Default");
+    expect(managr.startDisplay()).toEqual("Default");
   });
 
   it ("will return the value of display", function() {
-    spyOn(mnger, "startDisplay").and.returnValue("Display");
-    expect(mnger.startDisplay()).toEqual("Display");
+    spyOn(managr, "startDisplay").and.returnValue("Display");
+    expect(managr.startDisplay()).toEqual("Display");
   });
   
 });

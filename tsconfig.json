@@ -65,7 +65,7 @@
       "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
     },
     "include": [
-      "src/proj/*.ts",
+      "src/proj/StdViewManager.ts",
       "test/StdViewManager.ts"
     ],
     "exclude": ["node_modules", "coverage"]

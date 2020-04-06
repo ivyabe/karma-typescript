@@ -1,4 +1,5 @@
 export class StdViewManager {
+    constructor() {}
     private display: any;
     public startDisplay() {
         console.log("startDisplay()");
