@@ -1,4 +1,3 @@
-console.log("ClientCommon");
 declare class ClientCommon {
     public dialogResult: any;
     public getPermissions(permission: string): boolean;
@@ -16,12 +15,10 @@ declare class ClientCommon {
 /** clientCommon */
 declare let clientCommon: ClientCommon;
 
-console.log("StdViewManager");
 export class StdViewManager {
     private display: any;
     public startDisplay() {
-        if (this.display == null) {
-            clientCommon.closeAllDialog();
+        if (this.display === null) {
             return "NG";
         }
         else {
@@ -32,7 +29,3 @@ export class StdViewManager {
         return "1";
     }
 }
-
-// export const managr = new StdViewManager();
-// window.managr = managr;
-// module.exports = StdViewManager;
