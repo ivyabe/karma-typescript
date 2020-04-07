@@ -1,4 +1,4 @@
-// import { StdViewManager } from "../src/proj/StdViewManager";
+import { StdViewManager } from "../src/proj/StdViewManager";
 
 describe("StdViewManager class", function() {
 

@@ -21,7 +21,7 @@ module.exports = function(config) {
             clearContext: false
         },
         logLevel: config.LOG_INFO,
-        browsers: ["Chrome", "IE"],
+        browsers: ["ChromeHeadless"],
         singleRun: true
     });
 };
