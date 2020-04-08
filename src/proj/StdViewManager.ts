@@ -1,3 +1,13 @@
+export type UnmsPrimitiveData = number | string | boolean;
+export type UnmsPrimitiveArray = UnmsPrimitiveData[];
+
+export enum Binary {
+    ZERO = 0,
+    ONE = 1,
+    TWO = 2,
+    THREE = 3
+}
+
 declare class ClientCommon {
     public dialogResult: any;
     public getPermissions(permission: string): boolean;

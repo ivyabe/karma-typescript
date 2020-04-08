@@ -1,7 +1,24 @@
-// import { StdViewManager } from "../src/proj/StdViewManager";
+import { StdViewManager, Binary } from "../src/proj/StdViewManager";
+
+describe("Binary", function() {
+  it("Must equal to 0", function() {
+      expect(Binary.ZERO).toEqual(0);
+  });
+  
+  it("Must equal to 1", function() {
+      expect(Binary.ONE).toEqual(1);
+  });
+
+  it("Must equal to 2", function() {
+      expect(Binary.TWO).toEqual(2);
+  });
+
+  it("Must equal to 3", function() {
+      expect(Binary.THREE).toEqual(3);
+  });
+});
 
 describe("StdViewManager class", function() {
-  console.log("STARTING...");
   var svManager;
   beforeAll(function() {
     console.log("START!!!");
@@ -10,7 +27,6 @@ describe("StdViewManager class", function() {
   });
 
   afterAll(function() {
-    console.log("ALMOST THERE...");
     console.log("FINISHED!!!");
   });
 
